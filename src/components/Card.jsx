@@ -1,10 +1,10 @@
-function Card(props) {
+function Card({image, title, description, price}) {
     return (
         <div className="Card">
-            <img src={props.image} width="100px" height="100px" alt=""/>
-            <h3>{props.title}</h3>
-            <p>{props.description}</p>
-            <p>{props.price}</p>
+            <img src={image} width="100px" height="100px" alt=""/>
+            <h3>{title}</h3>
+            <p>{description}</p>
+            <p>{price}</p>
         </div>
     )
 }
